@@ -18,19 +18,30 @@
     },
     "form": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "dosage": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "status": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "pharmagroup": {
       "type": "string",
+      "required": false
+    },
+    "drugClass": {
+      "type": "string",
       "required": true
+    },
+    "drugSchedule": {
+      "type": "biginteger",
+      "required": false
+    },
+    "drugFeatures": {
+      "type": "richtext"
     }
   }
 }
