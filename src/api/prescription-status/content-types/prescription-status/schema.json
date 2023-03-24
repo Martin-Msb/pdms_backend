@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prescription_statuses",
+  "info": {
+    "singularName": "prescription-status",
+    "pluralName": "prescription-statuses",
+    "displayName": "prescriptionStatus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "string"
+    },
+    "prescriptionStart": {
+      "type": "datetime"
+    },
+    "prescriptionEnd": {
+      "type": "datetime"
+    },
+    "commentOnPrescription": {
+      "type": "richtext"
+    }
+  }
+}

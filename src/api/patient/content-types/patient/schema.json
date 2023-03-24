@@ -4,7 +4,8 @@
   "info": {
     "singularName": "patient",
     "pluralName": "patients",
-    "displayName": "patient"
+    "displayName": "patient",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -31,11 +32,12 @@
       "required": true
     },
     "patientPhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "city": {
       "type": "string",
@@ -52,6 +54,16 @@
     "medicalCondition": {
       "type": "richtext",
       "required": true
+    },
+    "patient_state": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::patient-state.patient-state"
+    },
+    "prescription_statuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::prescription-status.prescription-status"
     }
   }
 }
