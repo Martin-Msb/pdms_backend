@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drug_types",
+  "info": {
+    "singularName": "drug-type",
+    "pluralName": "drug-types",
+    "displayName": "drugTypes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "drugName": {
+      "type": "string",
+      "required": true
+    },
+    "form": {
+      "type": "string",
+      "required": true
+    },
+    "dosage": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "pharmagroup": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

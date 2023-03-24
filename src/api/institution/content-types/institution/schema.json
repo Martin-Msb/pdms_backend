@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "institutions",
+  "info": {
+    "singularName": "institution",
+    "pluralName": "institutions",
+    "displayName": "institution",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "institutionName": {
+      "type": "string",
+      "required": true
+    },
+    "institutionType": {
+      "type": "string",
+      "required": true
+    },
+    "operatingLicense": {
+      "type": "string",
+      "required": true
+    },
+    "institutionAddress": {
+      "type": "string",
+      "required": true
+    },
+    "health_provider": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::health-provider.health-provider",
+      "inversedBy": "institutions"
+    },
+    "institutionPhone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patient_visits",
+  "info": {
+    "singularName": "patient-visit",
+    "pluralName": "patient-visits",
+    "displayName": "patientVisits",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "visitDate": {
+      "required": true,
+      "type": "datetime"
+    },
+    "refferalCase": {
+      "type": "boolean",
+      "required": true
+    },
+    "specialistType": {
+      "type": "string",
+      "required": true
+    },
+    "visitReason": {
+      "type": "richtext",
+      "required": true
+    },
+    "diagnosis": {
+      "type": "richtext",
+      "required": true
+    },
+    "labTests": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "refferal": {
+      "type": "string",
+      "required": true
+    },
+    "Remarks": {
+      "type": "richtext",
+      "required": true
+    },
+    "drug_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::drug-type.drug-type"
+    }
+  }
+}
