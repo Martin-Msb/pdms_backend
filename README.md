@@ -2,18 +2,20 @@
 
 Provided NodeJS is installed
 
+git clone https://github.com/Martin-Msb/pdms_backend.git
+
+cd pdms_backend
+
+yarn install
+
 ### `start backend service in development mode`
 
 ```
-npm run develop
-# or
 yarn develop
 ```
 
 ### `start backend service`
 
 ```
-npm run start
-# or
 yarn start
 ```
