@@ -1,19 +1,23 @@
 ## Prescription Drug Monitoring System
 
+### `1. Clone Repo`
+
 Provided NodeJS is installed
 
-### `start backend service in development mode`
+git clone https://github.com/Martin-Msb/pdms_backend.git
+
+cd pdms_backend
+
+yarn install
+
+### `2. Start backend service in development mode`
 
 ```
-npm run develop
-# or
 yarn develop
 ```
 
-### `start backend service`
+### `3. Start backend service`
 
 ```
-npm run start
-# or
 yarn start
 ```
