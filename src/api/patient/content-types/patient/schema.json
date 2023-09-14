@@ -76,6 +76,12 @@
       "relation": "oneToMany",
       "target": "api::patient-visit.patient-visit",
       "mappedBy": "patient"
+    },
+    "diagnoses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::diagnosis.diagnosis",
+      "mappedBy": "patient"
     }
   }
 }

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "diagnoses",
+  "info": {
+    "singularName": "diagnosis",
+    "pluralName": "diagnoses",
+    "displayName": "diagnosis"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "diagnosisName": {
+      "type": "string"
+    },
+    "doctorName": {
+      "type": "string"
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::patient.patient",
+      "inversedBy": "diagnoses"
+    }
+  }
+}
