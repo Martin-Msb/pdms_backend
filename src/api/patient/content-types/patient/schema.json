@@ -64,6 +64,18 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::prescription-status.prescription-status"
+    },
+    "prescriptions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::prescription.prescription",
+      "mappedBy": "patient"
+    },
+    "patient_visits": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::patient-visit.patient-visit",
+      "mappedBy": "patient"
     }
   }
 }

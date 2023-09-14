@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prescriptions",
+  "info": {
+    "singularName": "prescription",
+    "pluralName": "prescriptions",
+    "displayName": "Prescriptions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "drug_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::drug-type.drug-type"
+    },
+    "date_filled": {
+      "type": "date"
+    },
+    "quantity_dispensed": {
+      "type": "string"
+    },
+    "days_supply": {
+      "type": "string"
+    },
+    "health_provider": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::health-provider.health-provider"
+    },
+    "prescription_start_date": {
+      "type": "date"
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::patient.patient",
+      "inversedBy": "prescriptions"
+    }
+  }
+}

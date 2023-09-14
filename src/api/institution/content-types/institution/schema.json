@@ -28,12 +28,6 @@
       "type": "string",
       "required": true
     },
-    "health_provider": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::health-provider.health-provider",
-      "inversedBy": "institutions"
-    },
     "institutionPhone": {
       "type": "string",
       "required": true

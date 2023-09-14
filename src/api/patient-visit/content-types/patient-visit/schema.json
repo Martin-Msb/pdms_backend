@@ -44,7 +44,7 @@
       "type": "string",
       "required": true
     },
-    "Remarks": {
+    "conclusion": {
       "type": "richtext",
       "required": true
     },
@@ -52,6 +52,15 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::drug-type.drug-type"
+    },
+    "visitAddress": {
+      "type": "string"
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::patient.patient",
+      "inversedBy": "patient_visits"
     }
   }
 }

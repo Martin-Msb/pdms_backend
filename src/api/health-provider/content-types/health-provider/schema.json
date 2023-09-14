@@ -30,12 +30,6 @@
       "target": "plugin::users-permissions.user",
       "mappedBy": "health_provider"
     },
-    "institutions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::institution.institution",
-      "mappedBy": "health_provider"
-    },
     "profilePhoto": {
       "allowedTypes": [
         "images"
