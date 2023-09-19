@@ -56,9 +56,9 @@
     "visitAddress": {
       "type": "string"
     },
-    "patient": {
+    "patients": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::patient.patient",
       "inversedBy": "patient_visits"
     }

@@ -71,17 +71,17 @@
       "target": "api::prescription.prescription",
       "mappedBy": "patient"
     },
-    "patient_visits": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::patient-visit.patient-visit",
-      "mappedBy": "patient"
-    },
     "diagnoses": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::diagnosis.diagnosis",
       "mappedBy": "patient"
+    },
+    "patient_visits": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::patient-visit.patient-visit",
+      "mappedBy": "patients"
     }
   }
 }
