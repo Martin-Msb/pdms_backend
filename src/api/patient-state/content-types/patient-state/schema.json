@@ -14,6 +14,12 @@
     "stateName": {
       "type": "string",
       "required": false
+    },
+    "patients": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::patient.patient",
+      "mappedBy": "patient_states"
     }
   }
 }

@@ -31,6 +31,12 @@
     "institutionPhone": {
       "type": "string",
       "required": true
+    },
+    "health_providers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::health-provider.health-provider",
+      "mappedBy": "institutions"
     }
   }
 }

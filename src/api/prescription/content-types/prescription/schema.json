@@ -26,19 +26,24 @@
     "days_supply": {
       "type": "string"
     },
-    "health_provider": {
+    "health_providers": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::health-provider.health-provider"
+      "relation": "manyToMany",
+      "target": "api::health-provider.health-provider",
+      "inversedBy": "prescriptions"
     },
     "prescription_start_date": {
       "type": "date"
     },
-    "patient": {
+    "patients": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::patient.patient",
       "inversedBy": "prescriptions"
+    },
+    "is_dispensed": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

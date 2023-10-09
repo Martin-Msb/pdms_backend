@@ -4,7 +4,8 @@
   "info": {
     "singularName": "diagnosis",
     "pluralName": "diagnoses",
-    "displayName": "diagnosis"
+    "displayName": "diagnosis",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -20,9 +21,9 @@
     "doctorName": {
       "type": "string"
     },
-    "patient": {
+    "patients": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::patient.patient",
       "inversedBy": "diagnoses"
     }

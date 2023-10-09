@@ -23,6 +23,12 @@
     },
     "commentOnPrescription": {
       "type": "richtext"
+    },
+    "patients": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::patient.patient",
+      "mappedBy": "prescription_statuses"
     }
   }
 }
