@@ -42,12 +42,6 @@
     },
     "drugFeatures": {
       "type": "richtext"
-    },
-    "patients": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::patient.patient",
-      "inversedBy": "drug_types"
     }
   }
 }

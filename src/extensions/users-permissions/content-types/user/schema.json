@@ -78,12 +78,6 @@
       "type": "string",
       "required": true
     },
-    "health_provider": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::health-provider.health-provider",
-      "inversedBy": "user"
-    },
     "phoneNumber": {
       "type": "string",
       "required": true

@@ -55,11 +55,10 @@
       "type": "richtext",
       "required": true
     },
-    "patient_states": {
+    "patient_state": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::patient-state.patient-state",
-      "inversedBy": "patients"
+      "relation": "oneToOne",
+      "target": "api::patient-state.patient-state"
     },
     "prescription_statuses": {
       "type": "relation",
@@ -75,26 +74,13 @@
     },
     "prescriptions": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::prescription.prescription",
-      "mappedBy": "patients"
+      "relation": "oneToMany",
+      "target": "api::prescription.prescription"
     },
     "diagnoses": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::diagnosis.diagnosis",
-      "mappedBy": "patients"
-    },
-    "health_providers": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::health-provider.health-provider",
-      "inversedBy": "patients"
-    },
-    "drug_types": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::drug-type.drug-type",
       "mappedBy": "patients"
     }
   }

@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "drug_types": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::drug-type.drug-type"
-    },
     "date_filled": {
       "type": "date"
     },
@@ -26,20 +21,8 @@
     "days_supply": {
       "type": "string"
     },
-    "health_providers": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::health-provider.health-provider",
-      "inversedBy": "prescriptions"
-    },
     "prescription_start_date": {
       "type": "date"
-    },
-    "patients": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::patient.patient",
-      "inversedBy": "prescriptions"
     },
     "is_dispensed": {
       "type": "boolean",

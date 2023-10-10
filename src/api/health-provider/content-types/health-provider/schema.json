@@ -27,8 +27,7 @@
     "user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "mappedBy": "health_provider"
+      "target": "plugin::users-permissions.user"
     },
     "profilePhoto": {
       "type": "media",
@@ -38,23 +37,11 @@
         "images"
       ]
     },
-    "patients": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::patient.patient",
-      "mappedBy": "health_providers"
-    },
     "institutions": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::institution.institution",
       "inversedBy": "health_providers"
-    },
-    "prescriptions": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::prescription.prescription",
-      "mappedBy": "health_providers"
     }
   }
 }
