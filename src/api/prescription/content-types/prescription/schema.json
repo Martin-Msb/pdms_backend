@@ -30,6 +30,9 @@
     },
     "patient": {
       "type": "integer"
+    },
+    "medicineName": {
+      "type": "string"
     }
   }
 }
